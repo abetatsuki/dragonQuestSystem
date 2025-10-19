@@ -97,3 +97,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+Assets/Fonts.meta
+Assets/TextMesh Pro.meta
+Assets/Fonts/keifont SDF.asset
+Assets/Fonts/keifont SDF.asset.meta

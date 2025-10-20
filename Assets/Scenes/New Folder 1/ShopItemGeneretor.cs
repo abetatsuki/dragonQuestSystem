@@ -5,10 +5,31 @@ using TMPro;
 public class ShopItemGeneretor : MonoBehaviour
 {
     [SerializeField] private Item[] _itemdata;
+    [SerializeField] private Vector2 startPosition = new Vector2(0, 300);
+    [SerializeField] private float verticalSpacing = 100f;
+    [SerializeField] private float arrowOffsetX = 200f;
+    private GameObject[] _itemText;
+    private RectTransform _arrowRect; // 矢印のRectTransform参照
+    private int _selectedIndex = 0;
 
     private void Start()
     {
-        GameObject textobj = new GameObject("mytext");
+        _itemText = new GameObject[_itemdata.Length];
+        for (int i = 0; i < _itemdata.Length; i++)
+        {
+            GeneretTestBox(i);
+            
+        }
+        
+    
+
+
+    }
+
+    public void GeneretTestBox(int length)
+    {
+        //テキストボックス
+        GameObject textobj = new GameObject($"text{length}");
         textobj.transform.SetParent(transform,false);
        
         TextMeshProUGUI textmesh = textobj.AddComponent<TextMeshProUGUI>();
@@ -17,10 +38,13 @@ public class ShopItemGeneretor : MonoBehaviour
         textmesh.color = Color.cyan;
         
         RectTransform rect = textobj.GetComponent<RectTransform>();
-        rect.anchoredPosition = new Vector2(0, 300);
+        rect.anchoredPosition = startPosition + Vector2.down *verticalSpacing *length;
         rect.localScale = Vector3.one;
-
-
+        
+        _itemText[length] = textobj;
+        
 
     }
+
+    
 }

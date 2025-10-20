@@ -18,18 +18,18 @@ public class inputsystem : MonoBehaviour
     void OnEnable()
     {
         // performed にメソッドを登録
-        inputAction.performed += OnMove;
+        inputAction.performed += OnSelected;
     }
 
     void OnDisable()
     {
         // 登録解除（重要！）
-        inputAction.performed -= OnMove;
+        inputAction.performed -= OnSelected;
         
         
     }
 
-    private void OnMove(InputAction.CallbackContext context)
+    private void OnSelected(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
 

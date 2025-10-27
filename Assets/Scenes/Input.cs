@@ -6,6 +6,7 @@ public class InputUI : MonoBehaviour
     [SerializeField] private Color _normalCell = Color.white;
     [SerializeField] private Color _selectedCell = Color.cyan;
     [SerializeField] private inputsystem input;
+    [SerializeField] private GameObject arrowUI;
 
     private int _selectedRow = 0;
     private const int Size = 5;
@@ -40,6 +41,7 @@ public class InputUI : MonoBehaviour
 
         // ✅ 矢印を生成
         var arrowObj = new GameObject("SelectedArrow");
+        
         arrowObj.transform.SetParent(transform, false);
 
         _arrow = arrowObj.AddComponent<RectTransform>();

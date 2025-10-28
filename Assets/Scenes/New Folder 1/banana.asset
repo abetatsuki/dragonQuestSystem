@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42f4732882ffa64a8a6917235a10866, type: 3}
+  m_Name: banana
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  _name: tadanoken
+  _price: 200
+  _item: {fileID: 6513688733971902698, guid: 56c0d9b94b647b74883fa88e5e8a8362, type: 3}

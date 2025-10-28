@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 817441182}
   - component: {fileID: 817441181}
   - component: {fileID: 817441180}
+  - component: {fileID: 817441184}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -485,6 +486,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!222 &817441184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817441179}
+  m_CullTransparentMesh: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +866,7 @@ MonoBehaviour:
   _normalCell: {r: 1, g: 1, b: 1, a: 1}
   _selectedCell: {r: 0, g: 1, b: 1, a: 1}
   input: {fileID: 1510113785}
+  arrowUI: {fileID: 1510113784}
 --- !u!114 &1719857099
 MonoBehaviour:
   m_ObjectHideFlags: 0
